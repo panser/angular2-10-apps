@@ -11,7 +11,7 @@ export class GithubService{
         private _htto: Http
     ) {
         console.log('Github Service Ready...')
-        this.username = 'bradtraversy';
+        this.username = 'panser';
     }
 
     getUser(){
