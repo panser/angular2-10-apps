@@ -7,8 +7,8 @@ import {GithubService} from "../services/github.service";
   templateUrl: 'profile.component.html'
 })
 export class ProfileComponent {
-  user[];
-  repos[];
+  user: any;
+  repos: any;
   username: string;
 
   constructor(
