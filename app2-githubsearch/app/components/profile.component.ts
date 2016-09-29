@@ -8,6 +8,7 @@ import {GithubService} from "../services/github.service";
 })
 export class ProfileComponent {
   user[];
+  repos[];
 
   constructor(
     private _githubService: GithubService
@@ -15,6 +16,12 @@ export class ProfileComponent {
     this._githubService.getUser().subscribe(user => {
         // console.log(user);
         this.user = user;
-      })
+    });
+
+    this._githubService.getRepos().subscribe(repos => {
+      // console.log(user);
+      this.repos = repos;
+    })
+
   }
 }
