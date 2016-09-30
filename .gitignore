@@ -3,4 +3,4 @@ node_modules/
 bower_components/
 **/typings/globals/
 
-**/*npm-debug.log.*
+**/*npm-debug.log*
