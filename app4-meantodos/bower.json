@@ -1,0 +1,20 @@
+{
+  "name": "app4-meantodos",
+  "description": "Simple todos app",
+  "main": "server.js",
+  "authors": [
+    "Sergey Panov"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/panser/angular2-10-apps",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
