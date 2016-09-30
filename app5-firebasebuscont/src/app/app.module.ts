@@ -4,8 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AngularFireModule } from 'angularfire2';
 
-
 import { AppComponent } from './app.component';
+import { FirebaseService } from './services/firebase.service';
 
 // Must export the config
 export const firebaseConfig = {
@@ -26,7 +26,9 @@ export const firebaseConfig = {
     HttpModule,
     AngularFireModule.initializeApp(firebaseConfig),
   ],
-  providers: [],
+  providers: [
+    FirebaseService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
